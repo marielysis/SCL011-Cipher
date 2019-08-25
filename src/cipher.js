@@ -19,7 +19,26 @@ window.cipher = {
         }
         return messageConct;
     },
-    decode: () => {
+    decode: (encryptMessage, codOffSet) => {
         /* Acá va tu código */
+
+        let messageConct = "";
+
+        for (let f = 0; f < encryptMessage.length; f++) {
+            if (encryptMessage.charCodeAt(f) >= 65 && encryptMessage.charCodeAt(f) <= 90) {
+                let resultadoCifrado2 = encryptMessage.charCodeAt(f);
+                let resultadoCifrado22 = ((resultadoCifrado2 + 65 - codOffSet) % 26 + 65);
+                //console.log(resultadoCifrado22);
+                let resultCipher2 = String.fromCharCode(resultadoCifrado22);
+                //console.log(resultCipher2);
+                messageConct += resultCipher2;
+            } else if (encryptMessage.charCodeAt(f) === 32) {
+                let resultadoCifrado22 = encryptMessage.charCodeAt(f);
+                let resultCipher2 = String.fromCharCode(resultadoCifrado22);
+                messageConct += resultCipher2;
+            }
+        }
+        return messageConct;
+
     }
 };

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div id="mensajes">
+        <h3>Introduzca codigo de encriptación</h3>
+        <input id="offset" type="text" />
+        <br/>
+        <br/>
+        <textarea id="textocipher" placeholder="Introduzca su mensaje"></textarea>
+        <br>
+        <button id="cifrar">Cifrar Mensaje</button>
+        <button id="descifrar">Descifrar Mensaje</button>
+        <br/>
+        <h4>Tu mensaje</h4>
+        <p id="impMessage"></p>
+    </div>
+
+    <div id="root">
+    </div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

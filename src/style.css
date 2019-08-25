@@ -1,20 +1,62 @@
 /* Acá va tu código */
 
-body {
-    background-image: url(https://miro.medium.com/max/1600/1*tfEzk4Og9pNJwa4V3uO7JA.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: rgb(209, 56, 46);
-}
-
 h1 {
-    color: rgb(235, 235, 207);
+    text-align: center;
 }
 
-h3 {
-    color: rgb(235, 235, 207);
+#ltnumeral {
+    color: green;
 }
 
-input {
-    size: 10cm
+#ltyellow {
+    color: yellow;
+}
+
+#ltblue {
+    color: rgb(37, 13, 173);
+}
+
+#ltred {
+    color: red;
+}
+
+li a {
+    color: black;
+    text-justify: distribute-all-lines;
+}
+
+.imgfondo {
+    background-image: url(https://miro.medium.com/max/1600/1*tfEzk4Og9pNJwa4V3uO7JA.png);
+    height: 500px;
+    width: 1250px;
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infomation {
+    color: azure;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata';
+    font-size: 3em;
+}
+
+
+/*
+li a:hover {
+    background-color: black;
+    padding: 25px 20px;
+}
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 1px;
 }
