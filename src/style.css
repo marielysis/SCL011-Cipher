@@ -22,7 +22,6 @@ h1 {
 
 li a {
     color: black;
-    text-justify: distribute-all-lines;
 }
 
 .imgfondo {
@@ -37,26 +36,59 @@ li a {
 }
 
 #infomation {
-    color: azure;
+    color: white;
+    border: 10%;
+    border-color: black;
     margin: 0;
     padding: 0;
     font-family: 'Inconsolata';
     font-size: 3em;
+    text-align: center;
 }
 
-
-/*
-li a:hover {
-    background-color: black;
-    padding: 25px 20px;
+#parrf1 {
+    color: black;
+    font-family: 'Inconsolata';
+    font-size: 2em;
+    text-align: justify;
+    justify-content: end;
 }
-*/
+
+.alinear {
+    justify-content: center;
+}
+
+.mensajes {
+    background-image: url(http://www.institutodeestrategia.com/media/institutodeestrategia/images/2019/03/12/2019031209592717070.jpg);
+    height: 520px;
+    width: 1300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#offset {
+    width: 20px;
+    height: 20px;
+}
+
+#impMessage {
+    width: 20%;
+    height: 30%;
+    min-height: 100px;
+    background-color: #e7e3e3;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 1px;
+    display: inline;
+}
+
+.contMensaje {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 footer {
-    background-color: black;
-    color: white;
     text-align: center;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 1px;
 }
